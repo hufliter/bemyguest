@@ -1,0 +1,20 @@
+{
+    "apps": [{
+        "name":"api",
+        "script": "app.js",
+        "watch": ["api"],
+        "watch_options" : {
+            "useFsEvents": false // for Mac OS only
+        },
+        "env": {
+            "NODE_ENV": "development"
+        },
+        "env_sit": {
+            "NODE_ENV": "sit"
+        },
+        "env_production": {
+            "NODE_ENV": "production"
+        },
+        "error_file": "./error.log"
+    }]
+}

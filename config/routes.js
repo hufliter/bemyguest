@@ -34,6 +34,26 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
+  },
+  "GET /api/users": {
+    controller : "user",
+    action: "getUsers"
+  },
+  "GET /api/user/:id": {
+    controller : "user",
+    action: "getUserDetail"
+  },
+  "POST /api/users" : {
+    controller : "user",
+    action: "createUser"
+  },
+  "PUT /api/users/:id" : {
+    controller : "user",
+    action: "editUser"
+  },
+  "DELETE /api/users/:id" : {
+    controller: "user",
+    action : "deleteUser"
   }
 
   /***************************************************************************
